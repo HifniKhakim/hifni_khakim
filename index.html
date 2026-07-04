@@ -385,7 +385,7 @@
                     </div>
                     <h3 class="project-title">Curriculum Vitae</h3>
                     <p class="project-desc">CV terbaru (ATS Friendly).</p>
-                    <a href="cv_hifni_khakim.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                    <a href="cv_hifni_khakim.pdf" class="btn btn-secondary view-pdf-btn" style="text-align: center;">Lihat PDF</a>
                 </div>
 
                 <!-- Sertifikat Pemakalah SISFOTEK -->
@@ -397,7 +397,7 @@
                     </div>
                     <h3 class="project-title">Sertifikat Pemakalah SISFOTEK 2025</h3>
                     <p class="project-desc">Pemakalah Seminar Nasional Sistem Informasi dan Teknologi Komputer.</p>
-                    <a href="Hifni Khakim.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                    <a href="Hifni Khakim.pdf" class="btn btn-secondary view-pdf-btn" style="text-align: center;">Lihat PDF</a>
                 </div>
                 
                 <!-- Surat Keterangan Lulus / Ijazah -->
@@ -409,7 +409,7 @@
                     </div>
                     <h3 class="project-title">Surat Keterangan Lulus (SKL)</h3>
                     <p class="project-desc">Bukti kelulusan Sarjana Teknik Informatika.</p>
-                    <a href="skl hakim.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                    <a href="skl hakim.pdf" class="btn btn-secondary view-pdf-btn" style="text-align: center;">Lihat PDF</a>
                 </div>
 
                 <!-- Transkrip Nilai -->
@@ -421,7 +421,7 @@
                     </div>
                     <h3 class="project-title">Transkrip Nilai</h3>
                     <p class="project-desc">Daftar nilai akademik selama masa studi.</p>
-                    <a href="Transkrip nilai hifni.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                    <a href="Transkrip nilai hifni.pdf" class="btn btn-secondary view-pdf-btn" style="text-align: center;">Lihat PDF</a>
                 </div>
 
                 <!-- Sertifikat DAC -->
@@ -433,7 +433,7 @@
                     </div>
                     <h3 class="project-title">Sertifikat DAC</h3>
                     <p class="project-desc">Sertifikat kompetensi Digital Analytics.</p>
-                    <a href="Sertifikat DAC hifni.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                    <a href="Sertifikat DAC hifni.pdf" class="btn btn-secondary view-pdf-btn" style="text-align: center;">Lihat PDF</a>
                 </div>
 
                 <!-- Sertifikat Course 1 -->
@@ -445,7 +445,7 @@
                     </div>
                     <h3 class="project-title">Sertifikat Pelatihan (237)</h3>
                     <p class="project-desc">Sertifikasi pelatihan teknis terkait AI/ML/Data.</p>
-                    <a href="sertifikat_course_237_1704702_031023100537_copy.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                    <a href="sertifikat_course_237_1704702_031023100537_copy.pdf" class="btn btn-secondary view-pdf-btn" style="text-align: center;">Lihat PDF</a>
                 </div>
 
                 <!-- Sertifikat Course 2 -->
@@ -457,7 +457,7 @@
                     </div>
                     <h3 class="project-title">Sertifikat Pelatihan (570)</h3>
                     <p class="project-desc">Sertifikasi pelatihan teknis lanjutan.</p>
-                    <a href="sertifikat_course_570_1704702_120923003219_copy.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                    <a href="sertifikat_course_570_1704702_120923003219_copy.pdf" class="btn btn-secondary view-pdf-btn" style="text-align: center;">Lihat PDF</a>
                 </div>
 
                 <!-- Cover Letter -->
@@ -469,7 +469,7 @@
                     </div>
                     <h3 class="project-title">Cover Letter</h3>
                     <p class="project-desc">Surat lamaran kerja profesional.</p>
-                    <a href="Cover Letter - Hifni Khakim.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                    <a href="Cover Letter - Hifni Khakim.pdf" class="btn btn-secondary view-pdf-btn" style="text-align: center;">Lihat PDF</a>
                 </div>
 
                 <!-- Dokumen Pendukung (SKCK & Kartu Kuning) -->
@@ -482,8 +482,8 @@
                     <h3 class="project-title">Dokumen Pendukung Lain</h3>
                     <p class="project-desc">SKCK & Kartu Kuning.</p>
                     <div style="display: flex; gap: 0.5rem;">
-                        <a href="skck.pdf" target="_blank" class="btn btn-secondary" style="flex:1; text-align: center; padding: 0.5rem; font-size: 0.85rem;">SKCK</a>
-                        <a href="Kartu kuning.pdf" target="_blank" class="btn btn-secondary" style="flex:1; text-align: center; padding: 0.5rem; font-size: 0.85rem;">Kartu Kuning</a>
+                        <a href="skck.pdf" class="btn btn-secondary view-pdf-btn" style="flex:1; text-align: center; padding: 0.5rem; font-size: 0.85rem;">SKCK</a>
+                        <a href="Kartu kuning.pdf" class="btn btn-secondary view-pdf-btn" style="flex:1; text-align: center; padding: 0.5rem; font-size: 0.85rem;">Kartu Kuning</a>
                     </div>
                 </div>
 
@@ -506,6 +506,14 @@
             <p style="font-size: 0.8rem; color: var(--text-muted)">Designed beautifully with a Deep Slate Developer Theme</p>
         </div>
     </footer>
+
+    <!-- PDF Modal -->
+    <div id="pdf-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
 
     <!-- Theme Toggle Script -->
     <script>
@@ -534,6 +542,34 @@
                 localStorage.setItem('theme', 'light');
                 sunIcon.style.display = 'none';
                 moonIcon.style.display = 'block';
+            }
+        });
+
+        // PDF Modal Logic
+        const pdfModal = document.getElementById('pdf-modal');
+        const pdfFrame = document.getElementById('pdf-frame');
+        const closeModal = document.getElementById('close-modal');
+        const pdfBtns = document.querySelectorAll('.view-pdf-btn');
+
+        pdfBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const pdfUrl = btn.getAttribute('href');
+                pdfFrame.src = pdfUrl;
+                pdfModal.classList.add('active');
+            });
+        });
+
+        function closePdfModal() {
+            pdfModal.classList.remove('active');
+            setTimeout(() => { pdfFrame.src = ''; }, 300);
+        }
+
+        closeModal.addEventListener('click', closePdfModal);
+
+        pdfModal.addEventListener('click', (e) => {
+            if (e.target === pdfModal) {
+                closePdfModal();
             }
         });
     </script>
