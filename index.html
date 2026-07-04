@@ -22,6 +22,7 @@
                 <li><a href="#experience">Pengalaman</a></li>
                 <li><a href="#projects">Proyek</a></li>
                 <li><a href="#education">Pendidikan</a></li>
+                <li><a href="#documents">Berkas</a></li>
                 <li style="display: flex; align-items: center;">
                     <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
                         <svg id="sun-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18.75a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-1.5a.75.75 0 01.75-.75zM6.166 17.834a.75.75 0 001.06 1.06l1.591-1.59a.75.75 0 10-1.06-1.061l-1.591 1.59zM4.5 12a.75.75 0 01-.75.75H1.5a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM6.166 6.166a.75.75 0 001.06-1.06l1.59-1.591a.75.75 0 00-1.061-1.06l-1.59 1.591z" /></svg>
@@ -94,13 +95,18 @@
                 <span class="section-tag">Profil</span>
                 <h2 class="section-title">Ringkasan Profesional</h2>
             </div>
-            <div style="max-width: 800px; color: var(--text-secondary); font-size: 1.1rem; gap: 1.5rem; display: flex; flex-direction: column;">
-                <p>
-                    Saya adalah mahasiswa tingkat akhir Sarjana Teknik Informatika yang berdedikasi tinggi menggabungkan kedalaman riset akademis dengan implementasi teknis praktis di lapangan. Spesialisasi saya berfokus pada <strong>Data Science</strong>, <strong>Computer Vision</strong>, dan <strong>Pengembangan Aplikasi Mobile</strong>.
-                </p>
-                <p>
-                    Sebagai individu yang terorganisir dan analitis, saya telah membuktikannya melalui penelitian mendalam mengenai ketahanan model klasifikasi menggunakan <em>PGD Adversarial Training</em>, serta pengembangan aplikasi seluler offline-first dari tahap nol. Berkomitmen kuat untuk terus berkembang, baik untuk persiapan studi lanjut jenjang S2 (Magister AI) maupun memberikan kontribusi signifikan di industri profesional.
-                </p>
+            <div class="about-grid" style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: center;">
+                <div class="about-image" style="border-radius: 16px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                    <img src="Salinan Hifni Khakim.jpg" alt="Foto Profil Hifni Khakim" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 1/1;" onerror="this.src='IMG_20260621_114857.png'">
+                </div>
+                <div style="color: var(--text-secondary); font-size: 1.1rem; display: flex; flex-direction: column; gap: 1.5rem;">
+                    <p>
+                        Saya adalah mahasiswa tingkat akhir Sarjana Teknik Informatika yang berdedikasi tinggi menggabungkan kedalaman riset akademis dengan implementasi teknis praktis di lapangan. Spesialisasi saya berfokus pada <strong>Data Science</strong>, <strong>Computer Vision</strong>, dan <strong>Pengembangan Aplikasi Mobile</strong>.
+                    </p>
+                    <p>
+                        Sebagai individu yang terorganisir dan analitis, saya telah membuktikannya melalui penelitian mendalam mengenai ketahanan model klasifikasi menggunakan <em>PGD Adversarial Training</em>, serta pengembangan aplikasi seluler offline-first dari tahap nol. Berkomitmen kuat untuk terus berkembang, baik untuk persiapan studi lanjut jenjang S2 (Magister AI) maupun memberikan kontribusi signifikan di industri profesional.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -358,6 +364,118 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <!-- Berkas & Sertifikat -->
+    <section id="documents">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Berkas</span>
+                <h2 class="section-title">Dokumen & Sertifikat</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Resume / CV -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Curriculum Vitae</h3>
+                    <p class="project-desc">CV terbaru (ATS Friendly).</p>
+                    <a href="Hifni Khakim.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                </div>
+                
+                <!-- Surat Keterangan Lulus / Ijazah -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Surat Keterangan Lulus (SKL)</h3>
+                    <p class="project-desc">Bukti kelulusan Sarjana Teknik Informatika.</p>
+                    <a href="skl hakim.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                </div>
+
+                <!-- Transkrip Nilai -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Transkrip Nilai</h3>
+                    <p class="project-desc">Daftar nilai akademik selama masa studi.</p>
+                    <a href="Transkrip nilai hifni.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                </div>
+
+                <!-- Sertifikat DAC -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Sertifikat DAC</h3>
+                    <p class="project-desc">Sertifikat kompetensi Digital Analytics.</p>
+                    <a href="Sertifikat DAC hifni.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                </div>
+
+                <!-- Sertifikat Course 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Sertifikat Pelatihan (237)</h3>
+                    <p class="project-desc">Sertifikasi pelatihan teknis terkait AI/ML/Data.</p>
+                    <a href="sertifikat_course_237_1704702_031023100537_copy.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                </div>
+
+                <!-- Sertifikat Course 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Sertifikat Pelatihan (570)</h3>
+                    <p class="project-desc">Sertifikasi pelatihan teknis lanjutan.</p>
+                    <a href="sertifikat_course_570_1704702_120923003219_copy.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                </div>
+
+                <!-- Cover Letter -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Cover Letter</h3>
+                    <p class="project-desc">Surat lamaran kerja profesional.</p>
+                    <a href="Cover Letter - Hifni Khakim.pdf" target="_blank" class="btn btn-secondary" style="text-align: center;">Lihat PDF</a>
+                </div>
+
+                <!-- Dokumen Pendukung (SKCK & Kartu Kuning) -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Dokumen Pendukung Lain</h3>
+                    <p class="project-desc">SKCK & Kartu Kuning.</p>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <a href="skck.pdf" target="_blank" class="btn btn-secondary" style="flex:1; text-align: center; padding: 0.5rem; font-size: 0.85rem;">SKCK</a>
+                        <a href="Kartu kuning.pdf" target="_blank" class="btn btn-secondary" style="flex:1; text-align: center; padding: 0.5rem; font-size: 0.85rem;">Kartu Kuning</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
