@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hifni Khakim - Software Engineer</title>
     <meta name="description" content="Final-year Informatics Engineering student specializing in Data Science, Computer Vision, and Mobile Application Development." />
     
-    <!-- Google Fonts: Inter for minimal look -->
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,104 +14,96 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-background font-sans antialiased">
-    <div class="min-h-screen max-w-2xl xl:max-w-3xl mx-auto py-12 sm:py-24 px-6">
-        <main class="flex flex-col min-h-dvh">
+<body>
+    <div class="layout-container">
+        <main>
             
             <!-- Hero Section -->
-            <section id="hero">
-                <div class="mx-auto w-full max-w-3xl space-y-8 animate-fade-in">
-                    <div class="gap-2 flex justify-between flex-col-reverse md:flex-row">
-                        <div class="justify-center flex-col flex flex-1 space-y-1.5">
-                            <div>
-                                <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none mb-2">
-                                    Hi, I'm Hifni Khakim <span class="wave">👋</span>
-                                </h1>
-                            </div>
-                            <div class="text-muted-foreground font-sans md:text-lg max-w-[600px] text-pretty">
-                                <p>Software Engineer and Data Enthusiast specializing in Computer Vision and Mobile Development. Passionate about building robust systems and continuous research.</p>
-                            </div>
-                            <div class="flex gap-2 justify-start mt-6">
-                                <a href="mailto:hifnikhakim@gmail.com" class="btn btn-primary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                                    Contact Me
-                                </a>
-                                <a href="https://github.com/ldclabs/anda" target="_blank" class="btn btn-secondary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                                    GitHub
-                                </a>
-                                <a href="https://www.linkedin.com/in/hifnikhakim" target="_blank" class="btn btn-secondary">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                                    LinkedIn
-                                </a>
-                            </div>
+            <section class="hero-section animate-fade-in">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Hi, I'm Hifni Khakim <span class="wave">👋</span>
+                        </h1>
+                        <div class="hero-desc">
+                            <p>Software Engineer and Data Enthusiast specializing in Computer Vision and Mobile Development. Passionate about building robust systems and continuous research.</p>
                         </div>
-                        <div class="flex-none mb-4 md:mb-0">
-                            <span class="relative flex shrink-0 overflow-hidden rounded-full size-36 md:size-40 mx-auto border border-border bg-muted">
-                                <div class="absolute inset-0 premium-shimmer"></div>
-                                <img src="IMG_20260621_114857.png" alt="Hifni Khakim" class="w-full h-full object-cover z-10 relative">
-                            </span>
+                        <div class="hero-actions">
+                            <a href="mailto:hifnikhakim@gmail.com" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                                Contact Me
+                            </a>
+                            <a href="https://github.com/ldclabs/anda" target="_blank" class="btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/hifnikhakim" target="_blank" class="btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                LinkedIn
+                            </a>
                         </div>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <div class="premium-shimmer"></div>
+                        <img src="IMG_20260621_114857.png" alt="Hifni Khakim" class="hero-image" />
                     </div>
                 </div>
             </section>
 
             <!-- About Section -->
-            <section id="about" class="pt-12 animate-fade-in delay-100">
-                <h2 class="text-xl font-bold mb-4">About</h2>
-                <div class="text-muted-foreground text-sm/relaxed space-y-4">
+            <section class="section animate-fade-in delay-100">
+                <h2 class="section-title">About</h2>
+                <div class="section-content text-muted">
                     <p>I am a final-year Informatics Engineering student with a strong foundation combining academic research and practical technical system implementation. I specialize in Data Science, Computer Vision, and Mobile Application Development.</p>
                     <p>I have built a track record of developing offline-first applications from scratch and conducting in-depth research on the robustness of classification models using techniques like PGD Adversarial Training. I am an analytical problem-solver, skilled in operational data administration, and deeply committed to continuous learning.</p>
                 </div>
             </section>
 
             <!-- Skills Section -->
-            <section id="skills" class="pt-12 animate-fade-in delay-200">
-                <h2 class="text-xl font-bold mb-4">Skills</h2>
-                <div class="flex flex-wrap gap-2">
-                    <div class="skill-badge">Python</div>
-                    <div class="skill-badge">Dart</div>
-                    <div class="skill-badge">TypeScript</div>
-                    <div class="skill-badge">JavaScript</div>
-                    <div class="skill-badge">React Native</div>
-                    <div class="skill-badge">React.js</div>
-                    <div class="skill-badge">PyTorch/TF</div>
-                    <div class="skill-badge">Expo</div>
-                    <div class="skill-badge">Flutter</div>
-                    <div class="skill-badge">SQLite</div>
-                    <div class="skill-badge">Computer Vision</div>
-                    <div class="skill-badge">Data Analysis (EDA)</div>
-                    <div class="skill-badge">NLP</div>
-                    <div class="skill-badge">Git</div>
+            <section class="section animate-fade-in delay-200">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-list">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Dart</span>
+                    <span class="skill-badge">TypeScript</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">React Native</span>
+                    <span class="skill-badge">React.js</span>
+                    <span class="skill-badge">PyTorch/TF</span>
+                    <span class="skill-badge">Expo</span>
+                    <span class="skill-badge">Flutter</span>
+                    <span class="skill-badge">SQLite</span>
+                    <span class="skill-badge">Computer Vision</span>
+                    <span class="skill-badge">Data Analysis (EDA)</span>
+                    <span class="skill-badge">NLP</span>
+                    <span class="skill-badge">Git</span>
                 </div>
             </section>
 
             <!-- Work Experience Section -->
-            <section id="experience" class="pt-12 animate-fade-in delay-300">
-                <h2 class="text-xl font-bold mb-4">Work Experience</h2>
-                <div class="flex flex-col gap-4">
+            <section class="section animate-fade-in delay-300">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="card-list">
                     
-                    <a class="group cursor-pointer block no-underline" href="#">
-                        <div class="experience-card flex bg-card rounded-lg hover:bg-accent transition-colors p-4 -mx-4 border border-transparent hover:border-border">
-                            <div class="flex-none pt-1">
-                                <span class="relative flex shrink-0 overflow-hidden rounded-full size-12 bg-muted flex items-center justify-center border border-border">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-                                </span>
+                    <a class="card-link" href="#">
+                        <article class="card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
                             </div>
-                            <div class="flex-grow ml-4">
-                                <div class="flex items-center justify-between gap-x-2 text-base">
-                                    <h3 class="font-semibold text-sm sm:text-base flex items-center">
+                            <div class="card-body">
+                                <header class="card-header">
+                                    <h3 class="card-title">
                                         Data Analyst & Admin (Freelance)
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 ml-1"><path d="m9 18 6-6-6-6"></path></svg>
+                                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
                                     </h3>
-                                    <div class="text-xs text-muted-foreground tabular-nums whitespace-nowrap">Feb 2023 - Present</div>
+                                    <time class="card-date">Feb 2023 - Present</time>
+                                </header>
+                                <div class="card-subtitle">
+                                    <span class="company-name">Self-Employed</span>
+                                    <span class="tag">Remote</span>
                                 </div>
-                                <div class="text-xs mt-1 text-muted-foreground flex items-center gap-2">
-                                    <span class="font-medium text-foreground">Self-Employed</span>
-                                    <span class="px-2 py-0.5 rounded-md bg-muted text-[10px]">Remote</span>
-                                </div>
-                                <div class="text-xs mt-3 text-muted-foreground leading-relaxed">
-                                    <ul class="list-disc pl-4 space-y-1">
+                                <div class="card-details text-muted">
+                                    <ul>
                                         <li>Executed operational administrative functions, data entry, and documentation archiving with high accuracy.</li>
                                         <li>Performed extensive data exploration and analysis to identify trends in large datasets for strategic insights.</li>
                                         <li>Developed Python automation scripts to accelerate data analysis workflows and routine reporting.</li>
@@ -119,162 +111,165 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </a>
 
-                    <a class="group cursor-pointer block no-underline" href="#">
-                        <div class="experience-card flex bg-card rounded-lg hover:bg-accent transition-colors p-4 -mx-4 border border-transparent hover:border-border">
-                            <div class="flex-none pt-1">
-                                <span class="relative flex shrink-0 overflow-hidden rounded-full size-12 bg-muted flex items-center justify-center border border-border">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m8 17 4 4 4-4"></path></svg>
-                                </span>
+                    <a class="card-link" href="#">
+                        <article class="card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m8 17 4 4 4-4"></path></svg>
                             </div>
-                            <div class="flex-grow ml-4">
-                                <div class="flex items-center justify-between gap-x-2 text-base">
-                                    <h3 class="font-semibold text-sm sm:text-base flex items-center">
+                            <div class="card-body">
+                                <header class="card-header">
+                                    <h3 class="card-title">
                                         Quality Control (Intern)
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 ml-1"><path d="m9 18 6-6-6-6"></path></svg>
+                                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
                                     </h3>
-                                    <div class="text-xs text-muted-foreground tabular-nums whitespace-nowrap">Dec 2025 - Jan 2026</div>
+                                    <time class="card-date">Dec 2025 - Jan 2026</time>
+                                </header>
+                                <div class="card-subtitle">
+                                    <span class="company-name">DAC, Cirebon</span>
+                                    <span class="tag">On-site</span>
                                 </div>
-                                <div class="text-xs mt-1 text-muted-foreground flex items-center gap-2">
-                                    <span class="font-medium text-foreground">DAC, Cirebon</span>
-                                    <span class="px-2 py-0.5 rounded-md bg-muted text-[10px]">On-site</span>
-                                </div>
-                                <div class="text-xs mt-3 text-muted-foreground leading-relaxed">
-                                    <ul class="list-disc pl-4 space-y-1">
+                                <div class="card-details text-muted">
+                                    <ul>
                                         <li>Conducted hardware Quality Control (QC) inspections to ensure laptop functionality prior to distribution.</li>
                                         <li>Diagnosed and tested internal and external components, including screen quality, network stability, and system debugging.</li>
                                         <li>Documented physical damage and system error reports for the technician team.</li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </a>
 
                 </div>
             </section>
 
             <!-- Projects Section -->
-            <section id="projects" class="pt-12 animate-fade-in delay-400">
-                <h2 class="text-xl font-bold mb-4">Projects</h2>
-                <div class="flex flex-col gap-4">
+            <section class="section animate-fade-in delay-400">
+                <h2 class="section-title">Projects</h2>
+                <div class="card-list">
                     
-                    <a class="group cursor-pointer block no-underline" href="#">
-                        <div class="experience-card flex bg-card rounded-lg hover:bg-accent transition-colors p-4 -mx-4 border border-transparent hover:border-border">
-                            <div class="flex-grow">
-                                <div class="flex items-center justify-between gap-x-2 text-base">
-                                    <h3 class="font-semibold text-sm sm:text-base flex items-center">
+                    <a class="card-link" href="#">
+                        <article class="card">
+                            <div class="card-body">
+                                <header class="card-header">
+                                    <h3 class="card-title">
                                         CV Model Robustness Research
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 ml-1"><path d="m9 18 6-6-6-6"></path></svg>
+                                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
                                     </h3>
-                                    <div class="text-xs text-muted-foreground tabular-nums whitespace-nowrap">Feb 2026 - Present</div>
+                                    <time class="card-date">Feb 2026 - Present</time>
+                                </header>
+                                <div class="card-subtitle">
+                                    <span class="company-name text-muted">Thesis Project (Academic)</span>
                                 </div>
-                                <div class="text-xs mt-1 text-muted-foreground">Thesis Project (Academic)</div>
-                                <div class="text-xs mt-3 text-muted-foreground leading-relaxed">
-                                    <p class="mb-2">Built and trained machine learning models using Python and PyTorch for image classification. Conducted comparative robustness testing between MobileNetV3 and ResNet50 architectures. Implemented PGD Adversarial Training to evaluate and improve model resilience against external noise.</p>
-                                    <div class="flex gap-2 flex-wrap mt-2">
-                                        <span class="px-2 py-0.5 rounded-md bg-muted/50 border border-border text-[10px] text-foreground">Python</span>
-                                        <span class="px-2 py-0.5 rounded-md bg-muted/50 border border-border text-[10px] text-foreground">PyTorch</span>
-                                        <span class="px-2 py-0.5 rounded-md bg-muted/50 border border-border text-[10px] text-foreground">Computer Vision</span>
+                                <div class="card-details text-muted">
+                                    <p>Built and trained machine learning models using Python and PyTorch for image classification. Conducted comparative robustness testing between MobileNetV3 and ResNet50 architectures. Implemented PGD Adversarial Training to evaluate and improve model resilience against external noise.</p>
+                                    <div class="tag-list">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">PyTorch</span>
+                                        <span class="tech-tag">Computer Vision</span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </a>
 
-                    <a class="group cursor-pointer block no-underline" href="#">
-                        <div class="experience-card flex bg-card rounded-lg hover:bg-accent transition-colors p-4 -mx-4 border border-transparent hover:border-border">
-                            <div class="flex-grow">
-                                <div class="flex items-center justify-between gap-x-2 text-base">
-                                    <h3 class="font-semibold text-sm sm:text-base flex items-center">
+                    <a class="card-link" href="#">
+                        <article class="card">
+                            <div class="card-body">
+                                <header class="card-header">
+                                    <h3 class="card-title">
                                         "The Path" - Real-Life RPG App
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 ml-1"><path d="m9 18 6-6-6-6"></path></svg>
+                                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
                                     </h3>
-                                    <div class="text-xs text-muted-foreground tabular-nums whitespace-nowrap">Late 2025 - Present</div>
+                                    <time class="card-date">Late 2025 - Present</time>
+                                </header>
+                                <div class="card-subtitle">
+                                    <span class="company-name text-muted">Independent Project</span>
                                 </div>
-                                <div class="text-xs mt-1 text-muted-foreground">Independent Project</div>
-                                <div class="text-xs mt-3 text-muted-foreground leading-relaxed">
-                                    <p class="mb-2">Designed and built an offline-first Android application for productivity and self-development using React Native (Expo) and Zustand architecture. Engineered a local database using SQLite to persist character states permanently. Delivered a responsive 60 FPS UI with a built-in journaling and quest management system.</p>
-                                    <div class="flex gap-2 flex-wrap mt-2">
-                                        <span class="px-2 py-0.5 rounded-md bg-muted/50 border border-border text-[10px] text-foreground">React Native</span>
-                                        <span class="px-2 py-0.5 rounded-md bg-muted/50 border border-border text-[10px] text-foreground">Expo</span>
-                                        <span class="px-2 py-0.5 rounded-md bg-muted/50 border border-border text-[10px] text-foreground">SQLite</span>
-                                        <span class="px-2 py-0.5 rounded-md bg-muted/50 border border-border text-[10px] text-foreground">Zustand</span>
+                                <div class="card-details text-muted">
+                                    <p>Designed and built an offline-first Android application for productivity and self-development using React Native (Expo) and Zustand architecture. Engineered a local database using SQLite to persist character states permanently. Delivered a responsive 60 FPS UI with a built-in journaling and quest management system.</p>
+                                    <div class="tag-list">
+                                        <span class="tech-tag">React Native</span>
+                                        <span class="tech-tag">Expo</span>
+                                        <span class="tech-tag">SQLite</span>
+                                        <span class="tech-tag">Zustand</span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </a>
 
-                    <a class="group cursor-pointer block no-underline" href="#">
-                        <div class="experience-card flex bg-card rounded-lg hover:bg-accent transition-colors p-4 -mx-4 border border-transparent hover:border-border">
-                            <div class="flex-grow">
-                                <div class="flex items-center justify-between gap-x-2 text-base">
-                                    <h3 class="font-semibold text-sm sm:text-base flex items-center">
+                    <a class="card-link" href="#">
+                        <article class="card">
+                            <div class="card-body">
+                                <header class="card-header">
+                                    <h3 class="card-title">
                                         Exploratory Data Analysis (EDA)
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 ml-1"><path d="m9 18 6-6-6-6"></path></svg>
+                                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
                                     </h3>
+                                </header>
+                                <div class="card-subtitle">
+                                    <span class="company-name text-muted">Academic Projects</span>
                                 </div>
-                                <div class="text-xs mt-1 text-muted-foreground">Academic Projects</div>
-                                <div class="text-xs mt-3 text-muted-foreground leading-relaxed">
-                                    <p class="mb-2">Performed extensive data cleaning and analysis using Python. Processed diverse structured datasets (medical data, facial attendance, mushroom object classification) to discover patterns and design efficient data architectures.</p>
-                                    <div class="flex gap-2 flex-wrap mt-2">
-                                        <span class="px-2 py-0.5 rounded-md bg-muted/50 border border-border text-[10px] text-foreground">Python</span>
-                                        <span class="px-2 py-0.5 rounded-md bg-muted/50 border border-border text-[10px] text-foreground">Pandas</span>
+                                <div class="card-details text-muted">
+                                    <p>Performed extensive data cleaning and analysis using Python. Processed diverse structured datasets (medical data, facial attendance, mushroom object classification) to discover patterns and design efficient data architectures.</p>
+                                    <div class="tag-list">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Pandas</span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </a>
 
                 </div>
             </section>
 
             <!-- Education Section -->
-            <section id="education" class="pt-12 pb-24 animate-fade-in delay-500">
-                <h2 class="text-xl font-bold mb-4">Education</h2>
-                <div class="flex flex-col gap-4">
+            <section class="section animate-fade-in delay-500" style="padding-bottom: 6rem;">
+                <h2 class="section-title">Education</h2>
+                <div class="card-list">
                     
-                    <div class="experience-card flex bg-card rounded-lg p-4 -mx-4">
-                        <div class="flex-none pt-1">
-                            <span class="relative flex shrink-0 overflow-hidden rounded-full size-12 bg-muted flex items-center justify-center border border-border">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
-                            </span>
+                    <article class="card no-hover">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
                         </div>
-                        <div class="flex-grow ml-4">
-                            <div class="flex items-center justify-between gap-x-2 text-base">
-                                <h3 class="font-semibold text-sm sm:text-base">STMIK IKMI Cirebon</h3>
-                                <div class="text-xs text-muted-foreground tabular-nums whitespace-nowrap">Feb 2022 - Nov 2026</div>
+                        <div class="card-body">
+                            <header class="card-header">
+                                <h3 class="card-title">STMIK IKMI Cirebon</h3>
+                                <time class="card-date">Feb 2022 - Nov 2026</time>
+                            </header>
+                            <div class="card-subtitle">
+                                <span class="company-name">Bachelor of Informatics Engineering (S1)</span>
                             </div>
-                            <div class="text-xs mt-1 font-medium text-foreground">Bachelor of Informatics Engineering (S1)</div>
-                            <div class="text-xs mt-2 text-muted-foreground leading-relaxed">
+                            <div class="card-details text-muted">
                                 <p><strong>GPA:</strong> 3.52</p>
-                                <p class="mt-1">Focusing on Computer Vision and Data Science. Conducting research on image classification robustness utilizing MobileNetV3 and ResNet50.</p>
+                                <p style="margin-top:0.25rem;">Focusing on Computer Vision and Data Science. Conducting research on image classification robustness utilizing MobileNetV3 and ResNet50.</p>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="experience-card flex bg-card rounded-lg p-4 -mx-4">
-                        <div class="flex-none pt-1">
-                            <span class="relative flex shrink-0 overflow-hidden rounded-full size-12 bg-muted flex items-center justify-center border border-border">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground"><path d="M2 10l10-5 10 5-10 5z"></path></svg>
-                            </span>
+                    <article class="card no-hover">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10l10-5 10 5-10 5z"></path></svg>
                         </div>
-                        <div class="flex-grow ml-4">
-                            <div class="flex items-center justify-between gap-x-2 text-base">
-                                <h3 class="font-semibold text-sm sm:text-base">SMAN 1 Dukupuntang</h3>
-                                <div class="text-xs text-muted-foreground tabular-nums whitespace-nowrap">Mar 2017 - May 2020</div>
+                        <div class="card-body">
+                            <header class="card-header">
+                                <h3 class="card-title">SMAN 1 Dukupuntang</h3>
+                                <time class="card-date">Mar 2017 - May 2020</time>
+                            </header>
+                            <div class="card-subtitle">
+                                <span class="company-name">Science Major (IPA)</span>
                             </div>
-                            <div class="text-xs mt-1 font-medium text-foreground">Science Major (IPA)</div>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
             </section>
 
         </main>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
