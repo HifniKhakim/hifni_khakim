@@ -1,275 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hifni Khakim - Software Engineer</title>
-    <meta name="description" content="Final-year Informatics Engineering student specializing in Data Science, Computer Vision, and Mobile Application Development." />
-    
-    <!-- Google Fonts: Inter -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hifni Khakim | Portfolio Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="layout-container">
-        <main>
-            
-            <!-- Hero Section -->
-            <section class="hero-section animate-fade-in">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">
-                            Hi, I'm Hifni Khakim <span class="wave">👋</span>
-                        </h1>
-                        <div class="hero-desc">
-                            <p>Software Engineer and Data Enthusiast specializing in Computer Vision and Mobile Development. Passionate about building robust systems and continuous research.</p>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">HK.DEVS</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#education">Pendidikan</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-grid">
+            <div>
+                <span class="badge">Open for Opportunities & Academic Research</span>
+                <h1 class="hero-title">Halo, Saya <br><span>Hifni Khakim</span></h1>
+                <p class="hero-subtitle">Data Scientist | Computer Vision Researcher | Mobile App Developer</p>
+                <p class="hero-desc">
+                    Mahasiswa tingkat akhir Sarjana Teknik Informatika dengan rekam jejak mendalam di riset akademis dan penerapan praktis. Berpengalaman dalam pengujian ketahanan model AI (Adversarial Training) serta perancangan sistem aplikasi offline-first dari nol.
+                </p>
+                
+                <div class="contact-meta">
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        Cirebon, Jawa Barat 45161
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        hifnikhakim@gmail.com
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        0812-2354-5979
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="mailto:hifnikhakim@gmail.com" class="btn btn-primary">Hubungi Saya</a>
+                    <a href="https://hifnikhakim.github.io/hifni_khakim/" target="_blank" class="btn btn-secondary">Kunjungi GitHub</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="tech-box">
+                    <div class="tech-box-header">
+                        <div class="dot dot-1"></div>
+                        <div class="dot dot-2"></div>
+                        <div class="dot dot-3"></div>
+                    </div>
+                    <div class="code-snippet">
+                        <p>// Ringkasan Karakter & Sistem</p>
+                        <span>const</span> developer = {<br>
+                        &nbsp;&nbsp;name: <span style="color: var(--accent-emerald)">"HIFNI KHAKIM"</span>,<br>
+                        &nbsp;&nbsp;focus: [<span style="color: var(--accent-emerald)">"CV"</span>, <span style="color: var(--accent-emerald)">"Data Science"</span>],<br>
+                        &nbsp;&nbsp;thesis: <span style="color: var(--accent-emerald)">"PGD Adversarial Training"</span>,<br>
+                        &nbsp;&nbsp;currentProject: <span style="color: var(--accent-emerald)">"The Path (Dao & Quest)"</span>,<br>
+                        &nbsp;&nbsp;stateManagement: <span style="color: var(--accent-emerald)">"Zustand & SQLite"</span>,<br>
+                        &nbsp;&nbsp;nextGoal: <span style="color: var(--accent-emerald)">"Magister / S2 AI"</span><br>
+                        };
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section / Ringkasan -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Profil</span>
+                <h2 class="section-title">Ringkasan Profesional</h2>
+            </div>
+            <div style="max-width: 800px; color: var(--text-secondary); font-size: 1.1rem; gap: 1.5rem; display: flex; flex-direction: column;">
+                <p>
+                    Saya adalah mahasiswa tingkat akhir Sarjana Teknik Informatika yang berdedikasi tinggi menggabungkan kedalaman riset akademis dengan implementasi teknis praktis di lapangan. Spesialisasi saya berfokus pada <strong>Data Science</strong>, <strong>Computer Vision</strong>, dan <strong>Pengembangan Aplikasi Mobile</strong>.
+                </p>
+                <p>
+                    Sebagai individu yang terorganisir dan analitis, saya telah membuktikannya melalui penelitian mendalam mengenai ketahanan model klasifikasi menggunakan <em>PGD Adversarial Training</em>, serta pengembangan aplikasi seluler offline-first dari tahap nol. Berkomitmen kuat untuk terus berkembang, baik untuk persiapan studi lanjut jenjang S2 (Magister AI) maupun memberikan kontribusi signifikan di industri profesional.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kompetensi</span>
+                <h2 class="section-title">Keahlian Teknis & Inti</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                        Bahasa Pemrograman
+                    </h3>
+                    <div class="tags-container">
+                        <span class="tag">Python</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag">React (JavaScript)</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="skill-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        Data Science & AI
+                    </h3>
+                    <div class="tags-container">
+                        <span class="tag">Exploratory Data Analysis (EDA)</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Image Classification</span>
+                        <span class="tag">Adversarial Training (PGD)</span>
+                        <span class="tag">Data Mining</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="skill-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+                        Tools & Frameworks
+                    </h3>
+                    <div class="tags-container">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Expo</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Google Colab</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="skill-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        Kompetensi Profesional
+                    </h3>
+                    <div class="tags-container">
+                        <span class="tag">Data Entry</span>
+                        <span class="tag">Administrasi Operasional</span>
+                        <span class="tag">Troubleshooting</span>
+                        <span class="tag">Debugging</span>
+                        <span class="tag">Pelaporan Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman Kerja Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Karier</span>
+                <h2 class="section-title">Pengalaman Kerja</h2>
+            </div>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">Februari 2023 – Sekarang</div>
+                        <h3 class="timeline-role">Asisten Administrasi & Data Analyst (Freelance)</h3>
+                        <div class="timeline-company">Personal / Bekerja Sendiri | Cirebon, Indonesia</div>
+                        <ul class="timeline-list">
+                            <li>Melaksanakan fungsi administratif operasional termasuk entri data, pengarsipan dokumen, dan layanan pelanggan dengan tingkat akurasi tinggi.</li>
+                            <li>Melakukan eksplorasi dan analisis data untuk mengidentifikasi tren serta korelasi dalam kumpulan data yang besar guna memberikan wawasan strategis.</li>
+                            <li>Mengembangkan skrip otomasi menggunakan Python untuk mempercepat tugas analisis data dan pelaporan rutin.</li>
+                            <li>Memanfaatkan teknologi Natural Language Processing (NLP) untuk mengekstrak wawasan dan mengolah data tidak terstruktur menjadi informasi bernilai.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">Desember 2025 – Januari 2026</div>
+                        <h3 class="timeline-role">Quality Control (Magang)</h3>
+                        <div class="timeline-company">DAC, Perumahan Shapire | Kota Cirebon, Indonesia</div>
+                        <ul class="timeline-list">
+                            <li>Melakukan inspeksi Quality Control (QC) perangkat keras untuk memastikan kelengkapan dan fungsionalitas unit laptop sebelum distribusi.</li>
+                            <li>Mendiagnosis dan menguji komponen internal serta eksternal, termasuk pengujian kualitas layar, stabilitas jaringan (network), dan debugging sistem.</li>
+                            <li>Mendokumentasikan laporan kerusakan fisik maupun kesalahan sistem (error/dysfunctional) pada perangkat untuk ditindaklanjuti oleh tim teknisi.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portofolio</span>
+                <h2 class="section-title">Pengalaman Proyek</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm1-15h-2v6h2V7zm0 8h-2v2h2v-2z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <span class="tag" style="color: var(--accent-cyan)">Skripsi</span>
+                            </div>
                         </div>
-                        <div class="hero-actions">
-                            <a href="mailto:hifnikhakim@gmail.com" class="btn btn-primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-                                Contact Me
-                            </a>
-                            <a href="https://github.com/ldclabs/anda" target="_blank" class="btn btn-secondary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                                GitHub
-                            </a>
-                            <a href="https://www.linkedin.com/in/hifnikhakim" target="_blank" class="btn btn-secondary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                                LinkedIn
-                            </a>
+                        <h3 class="project-title">Penelitian Ketahanan Model Computer Vision</h3>
+                        <p class="timeline-time" style="margin-bottom: 0.75rem;">Februari 2026 – Sekarang</p>
+                        <p class="project-desc">Membangun dan melatih model machine learning menggunakan Python dan Google Colab untuk klasifikasi citra. Melakukan uji komparasi ketahanan (robustness) antara arsitektur MobileNetV3 dan ResNet50 dengan menerapkan teknik PGD Adversarial Training guna meningkatkan model dari gangguan noise eksternal.</p>
+                    </div>
+                    <div class="tags-container">
+                        <span class="tag">Python</span>
+                        <span class="tag">MobileNetV3</span>
+                        <span class="tag">ResNet50</span>
+                        <span class="tag">Adversarial Training</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <span class="tag" style="color: var(--accent-emerald)">Mandiri</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Aplikasi "The Path"</h3>
+                        <p class="timeline-time" style="margin-bottom: 0.75rem;">Akhir 2025 – Sekarang</p>
+                        <p class="project-desc">Merancang dan membangun aplikasi Android offline-first untuk manajemen pengembangan diri dan produktivitas menggunakan React Native (Expo) dan arsitektur Zustand. Menyusun database SQLite untuk persistensi lokal, mengoptimalkan UI hingga berjalan responsif pada 60 FPS, serta membangun sistem pencatatan jurnal (Dao) dan manajemen tugas (Quest).</p>
+                    </div>
+                    <div class="tags-container">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Zustand</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Expo</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <svg viewBox="0 0 24 24"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <span class="tag">Akademis</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Proyek Eksplorasi Data (EDA)</h3>
+                        <p class="project-desc">Melakukan pembersihan data secara ekstensif dan analisis mendalam menggunakan Python. Berhasil memproses berbagai kumpulan data terstruktur kompleks seperti data medis, sistem presensi wajah, hingga klasifikasi objek jamur untuk memetakan pola serta merancang arsitektur data yang efisien.</p>
+                    </div>
+                    <div class="tags-container">
+                        <span class="tag">Python</span>
+                        <span class="tag">EDA</span>
+                        <span class="tag">Data Cleansing</span>
+                        <span class="tag">Data Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendidikan Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Edukasi</span>
+                <h2 class="section-title">Riwayat Pendidikan</h2>
+            </div>
+            <div class="edu-grid">
+                <!-- Edu 1 -->
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                    </div>
+                    <div class="edu-details">
+                        <h3>S1 - Sarjana Teknik Informatika</h3>
+                        <div class="edu-inst">STMIK IKMI Cirebon | Cirebon, Indonesia</div>
+                        <div class="edu-meta">Februari 2022 – Sekarang (Estimasi Lulus: November 2026)</div>
+                        <div class="edu-desc">
+                            <strong>IPK: 3.52</strong> <br>
+                            Fokus Studi & Skripsi: Penelitian mendalam di bidang Computer Vision dan Data Science. Topik riset mencakup pengujian komparatif ketahanan model citra MobileNetV3 vs ResNet50 menggunakan gangguan adversarial (PGD).
                         </div>
                     </div>
-                    <div class="hero-image-wrapper">
-                        <div class="premium-shimmer"></div>
-                        <img src="IMG_20260621_114857.png" alt="Hifni Khakim" class="hero-image" />
+                </div>
+                <!-- Edu 2 -->
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                    </div>
+                    <div class="edu-details">
+                        <h3>Sekolah Menengah Atas (SMA)</h3>
+                        <div class="edu-inst">SMAN 1 Dukupuntang | Cirebon, Indonesia</div>
+                        <div class="edu-meta">Maret 2017 – Mei 2020</div>
+                        <div class="edu-desc">
+                            <strong>Nilai Akhir: 86</strong> <br>
+                            Jurusan: Ilmu Pengetahuan Alam (IPA). Menyediakan landasan kuat dalam logika matematika dan pemecahan masalah sistematis.
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- About Section -->
-            <section class="section animate-fade-in delay-100">
-                <h2 class="section-title">About</h2>
-                <div class="section-content text-muted">
-                    <p>I am a final-year Informatics Engineering student with a strong foundation combining academic research and practical technical system implementation. I specialize in Data Science, Computer Vision, and Mobile Application Development.</p>
-                    <p>I have built a track record of developing offline-first applications from scratch and conducting in-depth research on the robustness of classification models using techniques like PGD Adversarial Training. I am an analytical problem-solver, skilled in operational data administration, and deeply committed to continuous learning.</p>
-                </div>
-            </section>
-
-            <!-- Skills Section -->
-            <section class="section animate-fade-in delay-200">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-list">
-                    <span class="skill-badge">Python</span>
-                    <span class="skill-badge">Dart</span>
-                    <span class="skill-badge">TypeScript</span>
-                    <span class="skill-badge">JavaScript</span>
-                    <span class="skill-badge">React Native</span>
-                    <span class="skill-badge">React.js</span>
-                    <span class="skill-badge">PyTorch/TF</span>
-                    <span class="skill-badge">Expo</span>
-                    <span class="skill-badge">Flutter</span>
-                    <span class="skill-badge">SQLite</span>
-                    <span class="skill-badge">Computer Vision</span>
-                    <span class="skill-badge">Data Analysis (EDA)</span>
-                    <span class="skill-badge">NLP</span>
-                    <span class="skill-badge">Git</span>
-                </div>
-            </section>
-
-            <!-- Work Experience Section -->
-            <section class="section animate-fade-in delay-300">
-                <h2 class="section-title">Work Experience</h2>
-                <div class="card-list">
-                    
-                    <a class="card-link" href="#">
-                        <article class="card">
-                            <div class="card-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-                            </div>
-                            <div class="card-body">
-                                <header class="card-header">
-                                    <h3 class="card-title">
-                                        Data Analyst & Admin (Freelance)
-                                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
-                                    </h3>
-                                    <time class="card-date">Feb 2023 - Present</time>
-                                </header>
-                                <div class="card-subtitle">
-                                    <span class="company-name">Self-Employed</span>
-                                    <span class="tag">Remote</span>
-                                </div>
-                                <div class="card-details text-muted">
-                                    <ul>
-                                        <li>Executed operational administrative functions, data entry, and documentation archiving with high accuracy.</li>
-                                        <li>Performed extensive data exploration and analysis to identify trends in large datasets for strategic insights.</li>
-                                        <li>Developed Python automation scripts to accelerate data analysis workflows and routine reporting.</li>
-                                        <li>Utilized Natural Language Processing (NLP) technologies to extract insights from unstructured data.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a class="card-link" href="#">
-                        <article class="card">
-                            <div class="card-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path><path d="M12 12v9"></path><path d="m8 17 4 4 4-4"></path></svg>
-                            </div>
-                            <div class="card-body">
-                                <header class="card-header">
-                                    <h3 class="card-title">
-                                        Quality Control (Intern)
-                                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
-                                    </h3>
-                                    <time class="card-date">Dec 2025 - Jan 2026</time>
-                                </header>
-                                <div class="card-subtitle">
-                                    <span class="company-name">DAC, Cirebon</span>
-                                    <span class="tag">On-site</span>
-                                </div>
-                                <div class="card-details text-muted">
-                                    <ul>
-                                        <li>Conducted hardware Quality Control (QC) inspections to ensure laptop functionality prior to distribution.</li>
-                                        <li>Diagnosed and tested internal and external components, including screen quality, network stability, and system debugging.</li>
-                                        <li>Documented physical damage and system error reports for the technician team.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section class="section animate-fade-in delay-400">
-                <h2 class="section-title">Projects</h2>
-                <div class="card-list">
-                    
-                    <a class="card-link" href="#">
-                        <article class="card">
-                            <div class="card-body">
-                                <header class="card-header">
-                                    <h3 class="card-title">
-                                        CV Model Robustness Research
-                                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
-                                    </h3>
-                                    <time class="card-date">Feb 2026 - Present</time>
-                                </header>
-                                <div class="card-subtitle">
-                                    <span class="company-name text-muted">Thesis Project (Academic)</span>
-                                </div>
-                                <div class="card-details text-muted">
-                                    <p>Built and trained machine learning models using Python and PyTorch for image classification. Conducted comparative robustness testing between MobileNetV3 and ResNet50 architectures. Implemented PGD Adversarial Training to evaluate and improve model resilience against external noise.</p>
-                                    <div class="tag-list">
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">PyTorch</span>
-                                        <span class="tech-tag">Computer Vision</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a class="card-link" href="#">
-                        <article class="card">
-                            <div class="card-body">
-                                <header class="card-header">
-                                    <h3 class="card-title">
-                                        "The Path" - Real-Life RPG App
-                                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
-                                    </h3>
-                                    <time class="card-date">Late 2025 - Present</time>
-                                </header>
-                                <div class="card-subtitle">
-                                    <span class="company-name text-muted">Independent Project</span>
-                                </div>
-                                <div class="card-details text-muted">
-                                    <p>Designed and built an offline-first Android application for productivity and self-development using React Native (Expo) and Zustand architecture. Engineered a local database using SQLite to persist character states permanently. Delivered a responsive 60 FPS UI with a built-in journaling and quest management system.</p>
-                                    <div class="tag-list">
-                                        <span class="tech-tag">React Native</span>
-                                        <span class="tech-tag">Expo</span>
-                                        <span class="tech-tag">SQLite</span>
-                                        <span class="tech-tag">Zustand</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-
-                    <a class="card-link" href="#">
-                        <article class="card">
-                            <div class="card-body">
-                                <header class="card-header">
-                                    <h3 class="card-title">
-                                        Exploratory Data Analysis (EDA)
-                                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
-                                    </h3>
-                                </header>
-                                <div class="card-subtitle">
-                                    <span class="company-name text-muted">Academic Projects</span>
-                                </div>
-                                <div class="card-details text-muted">
-                                    <p>Performed extensive data cleaning and analysis using Python. Processed diverse structured datasets (medical data, facial attendance, mushroom object classification) to discover patterns and design efficient data architectures.</p>
-                                    <div class="tag-list">
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">Pandas</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </a>
-
-                </div>
-            </section>
-
-            <!-- Education Section -->
-            <section class="section animate-fade-in delay-500" style="padding-bottom: 6rem;">
-                <h2 class="section-title">Education</h2>
-                <div class="card-list">
-                    
-                    <article class="card no-hover">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <!-- Informasi Tambahan & Minat -->
+            <div class="info-box">
+                <div class="info-grid">
+                    <div class="info-col">
+                        <h4>Informasi Pribadi & Bahasa</h4>
+                        <p><strong>Tanggal Lahir:</strong> 02 Juni 2001</p>
+                        <p><strong>Kebangsaan:</strong> Indonesia | <strong>Lisensi:</strong> SIM C</p>
+                        <p style="margin-top: 1rem;"><strong>Kemampuan Bahasa:</strong></p>
+                        <div class="tags-container" style="margin-top: 0.5rem;">
+                            <span class="tag">Indonesia (Native)</span>
+                            <span class="tag">Inggris (Aktif)</span>
+                            <span class="tag">Arab (Dasar)</span>
+                            <span class="tag">Jepang (Dasar)</span>
                         </div>
-                        <div class="card-body">
-                            <header class="card-header">
-                                <h3 class="card-title">STMIK IKMI Cirebon</h3>
-                                <time class="card-date">Feb 2022 - Nov 2026</time>
-                            </header>
-                            <div class="card-subtitle">
-                                <span class="company-name">Bachelor of Informatics Engineering (S1)</span>
-                            </div>
-                            <div class="card-details text-muted">
-                                <p><strong>GPA:</strong> 3.52</p>
-                                <p style="margin-top:0.25rem;">Focusing on Computer Vision and Data Science. Conducting research on image classification robustness utilizing MobileNetV3 and ResNet50.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="card no-hover">
-                        <div class="card-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10l10-5 10 5-10 5z"></path></svg>
-                        </div>
-                        <div class="card-body">
-                            <header class="card-header">
-                                <h3 class="card-title">SMAN 1 Dukupuntang</h3>
-                                <time class="card-date">Mar 2017 - May 2020</time>
-                            </header>
-                            <div class="card-subtitle">
-                                <span class="company-name">Science Major (IPA)</span>
-                            </div>
-                        </div>
-                    </article>
-
+                    </div>
+                    <div class="info-col">
+                        <h4>Ekspedisi & Minat Masa Depan</h4>
+                        <p><strong>Ekspedisi Alam Terbuka:</strong> Berhasil merencanakan dan mengeksekusi pendakian Gunung Sumbing (April 2026), menunjukkan ketahanan fisik, manajemen risiko, serta manajemen logistik yang matang.</p>
+                        <p><strong>Studi Lanjut:</strong> Sedang berada dalam tahap persiapan aktif untuk melanjutkan pendidikan Magister (S2) di bidang Kecerdasan Buatan (AI) / Computer Vision.</p>
+                        <p><strong>Hobi:</strong> Membaca novel, menulis jurnal (traveling), dan membedah literatur teknis.</p>
+                    </div>
                 </div>
-            </section>
+            </div>
 
-        </main>
-    </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/hifnikhakim" target="_blank" title="LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                </a>
+                <a href="https://hifnikhakim.github.io/hifni_khakim/" target="_blank" title="GitHub">
+                    <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 Hifni Khakim. All Rights Reserved.</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted)">Designed beautifully with a Deep Slate Developer Theme</p>
+        </div>
+    </footer>
+
 </body>
 </html>
